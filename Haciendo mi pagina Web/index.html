@@ -197,6 +197,56 @@
         </ul>
     </fieldset>
      </div>
+
     
-</body>
+        <form action="">
+            <div id="formulario">
+
+                <fieldset>
+                    <legend>Suscribase a nuestra pagina </legend>
+        
+                    <label for="usuario">Usuario *</label><br>
+                    <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" maxlength="10">
+        
+                    <br><br>
+                    <label for="pass">Contraseña *</label><br>
+                    <input type="password" id="pass" name="pass" required maxlength="10" placeholder="ingrese su Contraseña">
+        
+                    <br><br>
+                    <label for="email">Correo *</label><br>
+                    <input type="email" id="email" name="email" value="ejemplo@gmail.com" readonly>
+        
+                    <br><br>
+                    <label for="edad">Edad</label><br>
+                    <input type="number" name="edad" id="edad" max="100" min="0">
+                    
+                    
+                </fieldset>
+        
+                <br>
+                <input type="submit" id="enviar" value="Enviar">
+        
+                <br>
+                <label for="description">Ingrese su comentario </label>
+                <textarea name="description" id="description" cols="20" rows="5" placeholder="Ingrese el texto"></textarea>
+             
+             <fieldset>
+                    <br><br>
+                    <legend>Califiquenos</legend>
+                    <label for="">Seleccione una calificacion para la Pagina</label>
+                    <br>
+                    <input type="radio" name="radio" id="radio">
+                    <label for="">Exelente</label>
+
+                    <input type="radio" name="radio" id="radio">
+                    <label for="">Buena</label>
+
+                    <input type="radio" name="radio" id="radio">
+                    <label for="">Baja</label>
+                </fieldset>
+             
+             
+             </div>
+        </form>
+    </body>
 </html>
