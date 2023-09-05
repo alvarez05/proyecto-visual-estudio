@@ -1,13 +1,17 @@
+
 strong{
     color: red;
 }
 
 body{
-    background-color: #f8f8fc;
+    background-color: #b1914d;
 
     margin: 50px 100px 100px 100px ;
 }
 
-.div3{
-    color: green;
+
+
+.divR{
+    border: 2px solid rgb(229, 233, 7);
 }
+
