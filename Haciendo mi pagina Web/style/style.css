@@ -1,0 +1,25 @@
+@import 'banner.css';
+@import 'navigation.css';
+
+
+strong{
+    color: rgb(236, 12, 12);
+}
+
+body{
+    background-color: #f0e8d6;
+
+    margin: 50px 100px 100px 100px;
+}
+
+
+
+.divR{
+    border: 2px solid rgb(229, 233, 7);
+}
+
+legend{
+    color: rgba(17, 0, 255, 0.829);
+}
+
+

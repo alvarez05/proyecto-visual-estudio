@@ -1,0 +1,14 @@
+/* Banner */
+.container-Banner{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0px auto;
+}
+.container-Banner img{
+    width: 100%;
+    height: auto;
+}
