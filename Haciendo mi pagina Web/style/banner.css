@@ -1,5 +1,5 @@
 /* Banner */
-.container-Banner{
+.container-banner{
     width: 100%;
     height: 700px;
     display: flex;
@@ -8,7 +8,7 @@
     overflow: hidden;
     margin: 0px auto;
 }
-.container-Banner img{
+.container-banner__imagen{
     width: 100%;
     height: auto;
 }
