@@ -1,6 +1,6 @@
 @import 'banner.css';
 @import 'navigation.css';
-
+@import 'footer.css';
 
 strong{
     color: rgb(236, 12, 12);
@@ -22,4 +22,8 @@ legend{
     color: rgba(17, 0, 255, 0.829);
 }
 
-
+@media screen and (max-width:600px){
+    body{
+        background-color: ;
+    }
+}
