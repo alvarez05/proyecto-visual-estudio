@@ -9,14 +9,40 @@
     top: 0px;
 }
 
-.menu{
+.menu__list{
     display: flex;
     justify-content: space-around;
+    list-style-type: none;
+}
 
+.menu__item{
+    text-decoration: none;
+    padding: 10px 20px;
 }
 
 .menu__link{
     color: #fff;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5px 20px;
+}
+.menu__item:hover{
+    background-color: rgb(95, 95, 95);
+}
+
+@media screen and (max-width: 480px){
+    .header{
+        padding: 0px;
+
+        position: static;
+    }
+
+    .menu__link{
+        flex-direction: column;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .menu__item{
+        border-bottom: 1px solid #bbb;
+    }
 }
