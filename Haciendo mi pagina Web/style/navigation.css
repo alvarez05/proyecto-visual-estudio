@@ -30,19 +30,33 @@
 }
 
 @media screen and (max-width: 480px){
-    .header{
-        padding: 0px;
-
-        position: static;
-    }
-
-    .menu__link{
+   
+    .menu__list{
         flex-direction: column;
         padding: 0px;
         margin: 0px;
+        background-color: rgb(85, 79, 79);
+        position: absolute;
+        right: 0px; 
     }
 
+    .menu-mobile__line{
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin: 5px auto;
+    }
+    
     .menu__item{
         border-bottom: 1px solid #bbb;
     }
+
+   
+    .menu-mobile:hover+.menu__list{
+       display: block;
+    }
+
+    .menu__list:not(:hover){
+        display: none;
+    } 
 }
