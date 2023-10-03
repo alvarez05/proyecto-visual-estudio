@@ -9,14 +9,13 @@ strong{
 body{
     background-color: #f0e8d6;
 
-    margin: 10px 0px;
+    margin: 10px 10px;
 }
 
 
 
 .divR{
-    border: 2px solid rgb(229, 233, 7);
-}
+    border: 2px solid  rgb(173, 54, 54);
 
 legend{
     color: rgba(17, 0, 255, 0.829);
