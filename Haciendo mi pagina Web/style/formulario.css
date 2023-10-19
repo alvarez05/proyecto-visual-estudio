@@ -1,0 +1,21 @@
+.bodyformulario{
+    font-family: Arial, Helvetica, sans-serif ;
+    margin: 0%;
+    background: url(https://www.gastronomiavasca.net/uploads/image/file/4326/pan.jpg );
+    background-size: cover;
+    background-attachment: fixed;
+} 
+
+*{
+    box-sizing: border-box;
+}
+
+.contenedor{
+    width: 100%;
+    padding: 15px ;
+}
+
+.formulario{
+    background:#fff;
+    margin-top: 150px;
+}
