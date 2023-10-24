@@ -2,6 +2,7 @@
 @import 'navigation.css';
 @import 'footer.css';
 @import 'formulario.css';
+@import 'tienda.css';
 
 strong{
     color: rgb(236, 12, 12);
@@ -13,7 +14,14 @@ body{
     margin: 10px 10px;
 }
 
+#principal{
+    background-color: #f0e8d6;
+    padding: 10px 0px 10px 0px;
+}
 
+#principal h1{
+    margin: 0px;
+}
 
 .divR{
     border: 2px solid  rgb(173, 54, 54);
