@@ -1,0 +1,33 @@
+/* Globales */
+
+*::after,
+*::before,
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bodytienda{
+    margin: 0 auto;
+    max-width: 1200px;
+    font-family: 'Lato';
+    color: #333;
+}
+
+.icon-cart{
+    width: 40px;
+    height: 40px;
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Header */
+
+.headertienda{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0 40px 0;
+}
