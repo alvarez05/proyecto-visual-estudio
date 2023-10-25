@@ -31,7 +31,23 @@ productsList.addEventListener('click', e => {
             price: product.querySelector('p').textContent,
         };
 
-       allProducts = [...allProducts, infoProduct];
+        const exits = allProducts.some(
+            product => product.title === infoProduct.title
+        );
+       
+        if (exits){
+           const products = allProducts.map(product => {
+                if(product.title === infoProduct.title){
+                    product.quantity++;
+                    return product;
+                } else{
+                    return product;
+                }    
+           }); 
+           allProducts = [...product];
+        } else{
+            allProducts = [...allProducts, infoProduct];
+        }
     
         showHTML();
     } 
@@ -40,7 +56,7 @@ productsList.addEventListener('click', e => {
 // Funcion para mostrar html
 const showHTML = () => {
 
-    // Limpiar HTML 24:47 / 43:48 quede en el video
+    // Limpiar HTML 
     rowProduct.innerHTML = '';
 
     allProducts.forEach(product => {
