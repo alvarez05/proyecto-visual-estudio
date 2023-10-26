@@ -74,11 +74,11 @@ rowProduct.addEventListener('click', e => {
 // Funcion para mostrar  HTML
 const showHTML = () => {
 	if (!allProducts.length) {
-		cartEmpty.classList.remove('hidden');
+		//cartEmpty.classList.remove('hidden');
 		rowProduct.classList.add('hidden');
 		cartTotal.classList.add('hidden');
 	} else {
-		cartEmpty.classList.add('hidden');
+		//cartEmpty.classList.add('hidden');
 		rowProduct.classList.remove('hidden');
 		cartTotal.classList.remove('hidden');
 	}
@@ -116,9 +116,12 @@ const showHTML = () => {
         `;
 
 		rowProduct.append(containerProduct);
+		valorEntero = product.price.replace("$", "")
+		valorEntero = valorEntero.replace(".", "")
+
 
 		total =
-			total + parseInt(product.quantity * product.price.slice(1));
+			total + product.quantity * valorEntero;
 		totalOfProducts = totalOfProducts + product.quantity;
 	});
 
