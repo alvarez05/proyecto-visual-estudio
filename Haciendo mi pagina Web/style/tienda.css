@@ -192,3 +192,8 @@ img{
     padding: 15px 10px;
     cursor: pointer;
 }
+
+.cart-empty{
+    padding: 20px;
+    text-align: center;
+}
