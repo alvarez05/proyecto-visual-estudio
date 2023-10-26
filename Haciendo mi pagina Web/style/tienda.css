@@ -191,9 +191,20 @@ img{
     color: #fff;
     padding: 15px 10px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .cart-empty{
     padding: 20px;
     text-align: center;
+}
+
+.buttoncompra{
+    border: none;
+    background: none;
+    background-color: black;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 10px;
 }
