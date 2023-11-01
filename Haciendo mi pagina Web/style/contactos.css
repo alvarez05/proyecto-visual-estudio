@@ -1,0 +1,71 @@
+/*contactos*/
+
+.h1contacto{
+    text-align: center;
+}
+#izquierda{
+    width: 300px;
+    height: auto; overflow: hidden;
+    border: 0px solid;
+    float: left; 
+    
+}
+
+.texto-contacto{
+    text-align: left;
+}
+
+.email-contacto{
+    color: black;
+    text-decoration: none;
+}
+
+.email-contacto:hover{
+    text-decoration: underline;
+}
+
+#derecha{
+    width: 490px;
+    border: 0px solid;
+    height: auto; overflow: hidden;
+    float: right;
+    
+}
+
+.inputcontacto{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+textarea{
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.nombre-mensaje{
+    width: 95%;
+}
+
+.email-asunto{
+    width: 45%;
+}
+
+.submitcontacto{
+    padding: 10px;
+    background: rgb(173, 55, 55);
+    border-radius: 10px;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    justify-content: center;
+}
+
+#mapa{
+    width: 100%;
+    height: auto; overflow: hidden;
+    padding: 20px;
+}

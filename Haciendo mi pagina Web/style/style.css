@@ -4,10 +4,8 @@
 @import 'formulario.css';
 @import 'tienda.css';
 @import 'sobre nosotros.css';
+@import 'contactos.css';
 
-strong{
-    color: rgb(236, 12, 12);
-}
 
 body{
     background-color: #f0e8d6;
