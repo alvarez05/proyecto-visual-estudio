@@ -128,3 +128,20 @@ const showHTML = () => {
 	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };
+
+function finalizarCompra(){
+	const contenedorMensaje = document.querySelector(".mensaje-compra");
+	const totalPagar = document.getElementById("total-pagar");
+	const valorFinal = totalPagar.textContent;
+	const mensaje = document.getElementById("contenido-mensaje")
+
+	rowProduct.innerHTML ='';
+	allProducts = [];
+	countProducts.innerText = 0;
+	totalPagar.innerText = "$0";
+
+	console.log(contenedorMensaje);
+	contenedorMensaje.classList.remove('hidden-cart');
+
+	mensaje.innerHTML =`Su compra de ${valorFinal}, se a realizado exitosamente!`;
+}

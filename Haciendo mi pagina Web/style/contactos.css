@@ -64,6 +64,10 @@ textarea{
     justify-content: center;
 }
 
+.h2contacto{
+    text-align: center;
+}
+
 #mapa{
     width: 100%;
     height: auto; overflow: hidden;

@@ -61,6 +61,19 @@ img{
     font-size: 12px;
 }
 
+.mensaje-compra{
+    position: absolute;
+    top: 100px;
+    right: 400px;
+
+border: #000 2px solid;
+    background-color: #fff;
+    width: 400px;
+    z-index: 1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+    border-radius: 20px;
+}
+
 .container-cart-products{
     position: absolute;
     top: 50px;
