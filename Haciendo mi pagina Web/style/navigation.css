@@ -26,7 +26,8 @@
     padding: 5px 20px;
 }
 .menu__item:hover{
-    background-color: rgb(95, 95, 95);
+    /*background-color: rgb(95, 95, 95);*/
+    background-color: black ;
 }
 
 @media screen and (max-width: 480px){

@@ -67,11 +67,14 @@
             </div> 
             
             <div class="mensaje-compra hidden-cart">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-close">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg> 
-                <h2>Compra Realizada</h2>
-                <span id="contenido-mensaje"></span>
+                <div class="mensaje-compra__superior" >
+                    <h2>Compra Realizada</h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="mensaje-close" class="icon-close">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </div>
+        
+                <p id="contenido-mensaje" class="mensaje-compra__contenido"></p>
             </div>
 
             <div class="container-cart-products  hidden-cart">

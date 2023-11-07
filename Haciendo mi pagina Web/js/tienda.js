@@ -129,6 +129,8 @@ const showHTML = () => {
 	countProducts.innerText = totalOfProducts;
 };
 
+const contenedorMensaje = document.querySelector(".mensaje-compra");
+
 function finalizarCompra(){
 	const contenedorMensaje = document.querySelector(".mensaje-compra");
 	const totalPagar = document.getElementById("total-pagar");
@@ -145,3 +147,10 @@ function finalizarCompra(){
 
 	mensaje.innerHTML =`Su compra de ${valorFinal}, se a realizado exitosamente!`;
 }
+
+const cerrarMensaje = document.getElementById("mensaje-close");
+
+cerrarMensaje.addEventListener("click",()=>{
+	contenedorMensaje.classList.add('hidden-cart');
+
+});
