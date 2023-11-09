@@ -1,6 +1,10 @@
 const form = document.getElementById("login");
-let listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
 
+let listUsuarios = [];
+if(JSON.parse(localStorage.getItem("listUsuarios"))){
+   
+    listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
+}
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
