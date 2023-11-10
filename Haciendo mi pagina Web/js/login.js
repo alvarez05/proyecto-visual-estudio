@@ -52,7 +52,7 @@ function mostrarUsuarios() {
 }
 
 
-/* esto es lo que yo habia echo  */
+/* esto es lo que yo habia hecho  */
 form.addEventListener("submit",  (event) => {
     event.preventDefault();
     const emailValidar = document.getElementById("email").value;
