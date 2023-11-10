@@ -79,7 +79,7 @@ let listUsuarios = [];
 if(JSON.parse(localStorage.getItem("listUsuarios"))){
    
     listUsuarios = JSON.parse(localStorage.getItem("listUsuarios"));
-}
+};
 
 const formRegistro = document.getElementById("registro");
 
