@@ -12,10 +12,10 @@ const admin ={
     pass: "1234"
 };
 
-formularioLogin.addEventListener("submit", function (event) {
+form.addEventListener("submit", function (event) {
     event.preventDefault();
     const emailValidar = document.getElementById("email").value;
-    const passwordValidar = document.getElementById("pass").value;
+    const passwordValidar = document.getElementById("password").value;
     let usuarioObtenido;
 
     if (admin.user === emailValidar && admin.pass === passwordValidar) {
@@ -23,7 +23,7 @@ formularioLogin.addEventListener("submit", function (event) {
     } else {
         listUsuarios.forEach(usuario => {
 
-            if (usuario.correo === emailValidar) {
+            if (usuario.email === emailValidar) {
                 usuarioObtenido = usuario;
             }
         });
@@ -34,7 +34,6 @@ formularioLogin.addEventListener("submit", function (event) {
                     logeado: true,
                     nombre: usuarioObtenido.nombre
                 };
-
                 localStorage.setItem("login", JSON.stringify(login));
                 window.location.href = "index.html";
             } else {
@@ -50,33 +49,6 @@ formularioLogin.addEventListener("submit", function (event) {
 function mostrarUsuarios() {
     console.log(listUsuarios);
 }
-
-
-/* esto es lo que yo habia hecho  */
-form.addEventListener("submit",  (event) => {
-    event.preventDefault();
-    const emailValidar = document.getElementById("email").value;
-    const passwordValidar = document.getElementById("password").value;
-    let usuarioObtenido;
-
-    listUsuarios.forEach(usuario => {
-
-        if (usuario.email === emailValidar) {
-            usuarioObtenido = usuario;
-        }
-    });
-
-    if (usuarioObtenido) {
-        if (usuarioObtenido.password === passwordValidar) {
-            window.location.href = "/index.html";
-        } else {
-            alert("La constraseña es incorrecta");
-        }
-    }else{
-        alert("El correo no fue encontrado");
-    }
-
-});
 
 function redireccion() {
     window.location.href = "/registrarse.html";
